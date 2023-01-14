@@ -3,8 +3,8 @@ const ctx = canvas.getContext('2d')
 const d = 3
 const tileWidth = canvas.width / d
 const tileHeight = canvas.height / d
-const tileColor = '#ccccff'
-const canvasColor = '#eee'
+const tileColor = '#7B68EE'
+const canvasColor = '#4B0082'
 canvas.style.backgroundColor = canvasColor
 
 class Tile
@@ -18,14 +18,14 @@ class Tile
 
     draw()
     {
-        if(this.val)
+       if(this.val)
         {
             ctx.fillStyle = tileColor
             ctx.strokeStyle = canvasColor
             ctx.linewidth = 5
             ctx.fillRect(this.col * tileWidth, this.row * tileHeight, tileWidth, tileHeight)
             ctx.strokeRect(this.col * tileWidth, this.row * tileHeight, tileWidth, tileHeight)
-            ctx.font = `${tileWidth * 0.6}px Arial`
+            ctx.font = `${tileWidth * 0.6}px Segoe Print`
             ctx.fillStyle = "blue"
             ctx.textAlign = 'center'
             ctx.textBaseline = "middle"
